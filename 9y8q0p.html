@@ -1,32 +1,72 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 <head>
-<link rel="stylesheet" href="/official/images/style.css">
-<meta charset="UTF-8">
-<meta name="robots" content="noindex">
-<meta name="author" content="Lolcats">
-<meta name="viewport" content="width=device-width, initial-scale=0.4">
-<title>Catbox</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tinker N' Timber | Premium Woodworking & Handyman</title>
+  <meta name="description" content="Custom woodworking, furniture restoration, and handyman services in Mercer County, PA." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            primary: '#f59e0b',     // warm amber/gold
+            accent: '#dc2626',      // TNT red
+            dark: '#0f0f0f',
+            'dark-2': '#171717',
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
+<body class="bg-dark text-gray-100 min-h-screen flex flex-col">
 
-<img src="/official/images/404.png" style="margin: auto; display: block;">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 backdrop-blur-lg bg-dark/80 border-b border-gray-800">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="/" class="text-2xl font-black tracking-tighter bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+        TNT
+      </a>
+      <div class="space-x-8 text-lg">
+        <a href="/" class="hover:text-primary transition">Home</a>
+        <a href="gallery.html" class="hover:text-primary transition">Gallery</a>
+        <a href="#book" class="bg-primary text-black px-6 py-2 rounded-full font-bold hover:bg-amber-400 transition">Book Now</a>
+      </div>
+    </div>
+  </nav>
 
-<div class="notetiny">
-<a class="linkbutton" href="https://catbox.moe/">Click me to go home</a>
-</div>
+  <!-- Hero -->
+  <section id="book" class="flex-1 flex items-center justify-center py-32 bg-gradient-to-br from-dark via-dark-2 to-dark">
+    <div class="container mx-auto px-6 text-center max-w-4xl">
+      <h1 class="text-6xl md:text-8xl font-black mb-4">
+        Tinker N' Timber
+      </h1>
+      <p class="text-2xl md:text-3xl font-light text-gray-400 mb-4">Custom Woodworking • Furniture Restoration • Handyman Services</p>
+      <p class="text-lg text-gray-500 mb-12">Mercer County, PA & surrounding areas</p>
 
-<script>
-(function (d) {
-window.rum = {key: 'z2ave2fv'};
-var script = d.createElement('script');
-script.src = 'https://cdn.perfops.net/rom3/rom3.min.js';
-script.type = 'text/javascript';
-script.defer = true;
-script.async = true;
-d.getElementsByTagName('head')[0].appendChild(script);
-})(document);
-</script>
+      <!-- Calendly -->
+      <div class="max-w-3xl mx-auto bg-dark-2 border border-gray-800 rounded-2xl shadow-2xl overflow-hidden p-8">
+        <h2 class="text-4xl font-bold mb-6">Schedule Your Project</h2>
+        <div class="calendly-inline-widget" data-url="https://calendly.com/your-calendly-link" style="min-height:720px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      </div>
 
+      <div class="mt-12 flex flex-wrap justify-center gap-8 text-gray-400">
+        <div>✓ Free Estimates</div>
+        <div>✓ Insured</div>
+        <div>✓ 10+ Years Experience</div>
+        <div>✓ Veteran Owned</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-black py-8 text-center text-gray-600">
+    © 2025 Tinker N' Timber • Mercer County, Pennsylvania • All rights reserved
+  </footer>
 </body>
-
 </html>
